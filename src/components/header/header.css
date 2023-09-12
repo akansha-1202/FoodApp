@@ -1,0 +1,514 @@
+.header-box{
+    background-color:#000000 ;
+    margin:0px ;
+    min-height: 82px;
+    position: relative;
+    width: 100%;
+    z-index: 1010;
+}
+header{
+    height: 82px;
+    display: flex;
+    /* flex-flow: row nowrap; */
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    margin: auto;
+    box-sizing: inherit;
+}
+.logo{
+    color: white;
+    margin: 0px;
+    font-size: 3.5rem;
+    font-weight: 900;
+    font-family: 'Merienda', cursive;
+}
+.logo > span{
+    color: yellow;
+}
+.links-container{
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    font-family: 'Lato', sans-serif; 
+
+}
+button{
+    background: none;
+    border: none;
+    outline: none;
+    margin: unset;
+    padding: unset;
+    cursor: pointer;
+    font-weight: inherit;
+    text-transform: inherit;
+    color: inherit;
+    font-size: inherit;
+    letter-spacing: inherit;
+    z-index: 1011;
+}
+.nav-list-item-text{
+    font-weight: 900;
+    font-family: var(--fonts-heading);
+    text-transform: uppercase;
+}
+.nav-list-items .dropdown{
+    display: none;
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 35px;
+    letter-spacing: 1px;
+    /* font-family: var(--fonts-base); */
+    background-color: #000;
+    text-align: left;
+    width: max-content;
+    z-index: 1021;
+    cursor: pointer;
+
+}
+.nav-list-items .dropdown-items{
+    color: #fff;
+    /* font-size: 0.4rem; */
+    letter-spacing: 0;
+}
+.dropdown-item:hover{
+    color:#77E2E1 ;
+}
+
+.nav-buttons{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    flex-grow: 1;
+    justify-content: flex-end;
+    z-index: 1011;
+    padding: 3%;
+}
+
+
+.links{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.dropdown-close{
+    display: none;
+}
+
+.navbar-logged-in-dropdown-content{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    padding: 1% 2%;
+    position: absolute;
+    top: 100%; /* Position it just below the profile icon */
+    right: 0;  /* Position it to the right */
+    overflow-y: auto; 
+   z-index: 1000; /* Adjust the value as needed */
+}
+
+
+.navbar-login-register-overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 2;
+}
+
+.navbar-login-register-overlay {
+    background: rgba(49, 49, 49, 0.8);
+}
+.navbar-login-register-close-btn{
+    cursor: pointer;
+    font-size: 2rem;
+    /* margin: 1rem 0.5rem 0 20.5rem; */
+}
+
+.navbar-login-register-popup-content-for-login {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 3px;
+    z-index: 2000;
+}
+
+.navbar-login-register-popup-content-for-register {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 3px;
+    /* height: 30rem; */
+     /* overflow-y: scroll;  */
+    z-index: 2000;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1210px){
+#mobile-menu-icon{
+    display: none;
+   
+}
+#main-nav{
+    display: flex;
+    flex-flow: row nowrap;
+    flex-basis: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    /* font-size: 15px; */
+    line-height: 21px;
+    letter-spacing: 1px; 
+    /* width: 100%; */
+}
+.nav-list{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 25px;
+    /* align-items: center; */
+    /* padding-left: 0; */
+    margin: 0 37px 0 28px;
+    /* margin-left: 21px; */
+}
+.nav-list-items{
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.9rem;
+    font-weight: 600;
+    width: auto;
+}
+.nav-list-items:hover .nav-list-item-text{
+    border-bottom: 3px solid #77E2E1;
+    cursor: pointer;
+}
+
+.nav-list-item-text{
+    /* margin-left: 24px; */
+    /* margin-top: 8px; */
+    min-height: 25px;
+    overflow: hidden;
+    /* white-space: nowrap; */
+    /* font-size: 15px; */
+    line-height: 16px;
+    letter-spacing: 1px;
+    width: 110%;
+}
+.caret{
+    display: none;
+}
+.nav-list-items:hover .dropdown{
+    display: block;
+    position: absolute;
+    top: 82px;
+    padding: 7px 15px 24px 15px;
+}
+.nav-buttons{
+    flex-grow: 0;
+    flex-shrink: 0;
+    /* margin-left: 38px; */
+}
+
+
+.profile-icon{
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+}
+
+.navbar-logged-in-dropdown-content{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    padding: 1% 2%;
+    font-size:1rem;
+    width: 12%;
+    position: absolute;
+    top: 100%; /* Position it just below the profile icon */
+    right: 0;  /* Position it to the right */
+    height: 140px; /* Set a fixed height */
+    overflow-y: hidden; 
+   z-index: 1000; /* Adjust the value as needed */
+}
+.navbar-logged-in-dropdown-content a{
+    padding: 3% 0;
+    width:100% ;
+}
+
+
+.navbar-login-register-popup-content-for-login {
+    top: 55%;
+    left: 50%;
+    width: 30%;
+}
+
+.navbar-login-register-popup-content-for-register {
+    top: 55%;
+    left: 50%;
+    width: 30%;
+}
+
+
+}
+
+
+
+@media screen and (min-width : 744px) and (max-width: 1209px){
+#mobile-menu-icon{
+    display: block;
+    margin-right: 12px;
+    padding: 2%;
+    font-size: 3rem;
+}
+header{
+    font-size: 20px;
+    line-height: 32px;
+}
+#main-nav{
+    display: none;
+}
+#main-nav-mobile{
+    z-index: 1013;
+    display: flex;
+    margin-top: 82px;
+    flex-flow: column nowrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(100vh - 82px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    width: 100vw;
+    max-width: 676px;
+    padding-bottom: 100px;
+    background-color: #000;
+    /* font-family: var(--fonts-heading); */
+    line-height: 22px;
+    letter-spacing: .01em;
+}
+.nav-list{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 37px 0 15px;
+}
+.nav-list-items{
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    padding: 30px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: flex-start;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.nav-list-item-text{
+    align-self: flex-start;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+.nav-list-items .dropdown{
+    position: relative;
+    flex-flow: column nowrap;
+    display: flex;
+    align-self: flex-start;
+    padding: 0;
+    margin: 18px 0 0;
+    padding-left: 18px;
+
+}
+.nav-list-items .caret{
+    display: inline;
+    position: absolute;
+    right: 50px;
+}
+
+#open{
+    border-bottom: 3px solid #77E2E1;
+    cursor: pointer;
+}
+
+.profile-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+
+
+.navbar-logged-in-dropdown-content{
+    padding: 1% 2%;
+    font-size:0.9rem;
+    width: 100%;
+    text-align: right;
+    height: 165px; /* Set a fixed height */
+    overflow-y: hidden; 
+}
+.navbar-logged-in-dropdown-content a{
+    padding: 0% 0;
+    width:100% ;
+}
+
+.navbar-login-register-popup-content-for-login {
+    top: 50%;
+    left: 50%;
+    width: 50%;
+
+}
+
+.navbar-login-register-popup-content-for-register {
+    top: 50%;
+    left: 50%;
+    width: 50%;
+}
+
+
+}
+
+
+
+@media screen and (max-width: 743px){
+
+#mobile-menu-icon{
+    margin-right: 12px;
+    padding: 2%;
+    font-size: 3rem;
+
+}
+#main-nav{
+    display: none;
+}
+#main-nav-mobile{
+    z-index: 1013;
+    display: flex;
+    margin-top: 82px;
+    flex-flow: column nowrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(100vh - 82px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    width: 100vw;
+    max-width: 676px;
+    padding-bottom: 100px;
+    background-color: #000;
+    /* font-family: var(--fonts-heading); */
+    font-size: 1.5rem;
+    line-height: 29px;
+    letter-spacing: .01em;
+}
+.nav-list{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 37px 0 15px;
+}
+.nav-list-items{
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    padding: 25px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: flex-start;
+    width: 90%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.nav-list-item-text{
+    align-self: flex-start;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+.nav-list-items .dropdown{
+    position: relative;
+    flex-flow: column nowrap;
+    display: flex;
+    align-self: flex-start;
+    padding: 0;
+    margin: 18px 0 0;
+    padding-left: 15px;
+
+}
+.nav-list-items .caret{
+    display: inline;
+    position: absolute;
+    right: 50px;
+    height: 5px;
+}
+#open{
+    border-bottom: 3px solid #77E2E1;
+    cursor: pointer;
+}
+
+
+.profile-icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+
+
+
+.navbar-logged-in-dropdown-content{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    padding: 1% 2%;
+    font-size:0.7rem;
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    top: 100%; /* Position it just below the profile icon */
+    right: 0;  /* Position it to the right */
+    height: 120px; /* Set a fixed height */
+    overflow-y: hidden; 
+   z-index: 1000; /* Adjust the value as needed */
+}
+.navbar-logged-in-dropdown-content a{
+    padding: 2% 0;
+    width:100% ;
+}
+
+.navbar-login-register-popup-content-for-login {
+    top: 52%;
+    left: 50%;
+    width: 75%;
+
+}
+
+.navbar-login-register-popup-content-for-register {
+    top: 52%;
+    left: 50%;
+    width: 75%;
+}
+
+}
+
+

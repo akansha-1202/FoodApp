@@ -1,0 +1,133 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 77vh;
+  padding: 3rem 0px 2rem;
+  overflow-y: scroll;
+}
+
+.form-heading {
+  margin-top: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 12px;
+  font-family: brandon-grotesque, "Helvetica Neue", Helvetica, arial, sans-serif;
+  color: #2f2f2f;
+  font-size: 1.3rem;
+}
+
+label {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0px;
+  display: block;
+  color: #2f2f2f;
+  font-family: brandon-grotesque, "Helvetica Neue", Helvetica, arial, sans-serif;
+  font-size: 0.8rem;
+  line-height: 0;
+}
+
+input {
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  color: #2f2f2f;
+  font-family: Gotham, "Helvetica Neue", Helvetica, arial, sans-serif;
+  font-size: 0.8rem;
+  border: 0;
+  border-radius: 3px;
+  background: #f2f2f2;
+  margin-bottom: 1rem;
+}
+
+#show-hide-login-page {
+  width: 5rem;
+  height: 2rem;
+  position: relative;
+  top: -3.5rem;
+  left: 12rem;
+  cursor: pointer;
+  font-size: 0.6rem;
+  font-weight: 900;
+  border: none;
+}
+
+#loginBtn {
+  width: 100%;
+  background-color: #fae69a;
+  color: #979797;
+  padding: 5%;
+  border-radius: 2px;
+}
+
+.icons {
+  width: 48px;
+  height: 48px;
+  border: 1px solid grey;
+  border-radius: 50px;
+  /* background-color: black;
+    color: #f2f2f2; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons:hover {
+  transform: scale(1.1);
+  transition: all 2s none;
+}
+
+.footer {
+  margin-top: -1rem;
+  background-color: white;
+  color: black;
+}
+
+.form-links {
+  text-decoration: none;
+  color: #0f8bea;
+  font-weight: 500;
+}
+
+/* signup */
+
+.register-body p {
+  font-size: 0.8rem;
+  margin-top: -0.1rem;
+}
+
+.register-body{
+    padding: 0 10%;
+}
+
+
+
+@media screen and (min-width : 744px) and (max-width: 1209px){
+.form{
+    width: 100%;
+    height: 52vh;
+    padding: 3rem 0px 2rem;
+}
+
+}
+
+
+@media screen and (max-width: 743px){
+
+    .form{
+        width: 100%;
+        height: 68vh;
+        font-size: 1rem;
+    }
+    .register-body{
+        padding: 0 4%;
+    }
+    #show-hide-login-page {
+        width: 4rem;
+      }
+}

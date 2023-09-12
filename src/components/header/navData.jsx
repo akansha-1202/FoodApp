@@ -1,0 +1,91 @@
+export const navData = [
+  {
+    menu: "RECIPES",
+    submenu: [
+      "Breakfast & Brunch Recipes",
+      "Lunch Recipes",
+      "Appetizers & Snack Recipes",
+      "Dinner Recipes",
+      "Dessert Recipes",
+      "Drink & Cocktail Recipes",
+      "Side Dish Recipes",
+      "Grilling & BBQ Recipes",
+      "Microwave Recipes",
+      "Quick & Easy Recipes",
+      "Slow-Cooker Recipes",
+      "Air Fryer Recipes",
+      "Baking Recipes",
+    ],
+  },
+  {
+    menu: "POPULAR",
+    submenu: [
+      "Drink & Cocktail Recipes",
+      "Side Dish Recipes",
+      "Grilling & BBQ Recipes",
+      "Microwave Recipes",
+      "Quick & Easy Recipes",
+      "Slow-Cooker Recipes",
+      "Air Fryer Recipes",
+      "Instant Pot Recipes",
+      "Baking Recipes",
+    ],
+  },
+  {
+    menu: "MEAT & SEAFOOD",
+    submenu: [
+      "Chicken Recipes",
+      "Salmon Recipes",
+      "Pork Chop Recipes",
+      "Ground Beef Recipes",
+      "Shrimp Recipes",
+    ],
+  },
+  {
+    menu: "HEALTHY & DIET",
+    submenu: [
+      "Keto Recipes",
+      "Healthy Recipes",
+      "Vegetarian Recipes",
+      "Vegan Recipes",
+      "Mediterranean Diet Recipes",
+      "Weight Watchers Recipes",
+      "Low-Carb Recipes",
+      "Gluten-Free Recipes",
+    ],
+  },
+  {
+    menu: "HOLIDAYS",
+    submenu: [
+      "Dinner Party Recipes",
+      "Game Day Recipes",
+      "Valentine's Day Recipes",
+      "St. Patrick's Day Recipes",
+      "Easter Recipes",
+      "Cinco de Mayo Recipes",
+      "Mother's Day Recipes",
+      "Memorial Day Recipes",
+    ],
+  },
+  {
+    menu: "CUISINE",
+    submenu: [
+      "Mexican Recipes",
+      "Italian Recipes",
+      "Indian Recipes",
+      "Thai Recipes",
+      "Korean Recipes",
+      "French Recipes",
+      "Latin American Recipes",
+    ],
+  },
+  {
+    menu: "SEASONAL",
+    submenu: [
+      "Spring Recipes",
+      "Summer Recipes",
+      "Fall Recipes",
+      "Winter Recipes",
+    ],
+  }
+];

@@ -1,0 +1,158 @@
+#saved-page-header{
+    background-color: black;
+    color: white;
+    border-bottom: 6px solid #77E2E1;
+}
+
+#saved-page-header h2{
+    margin: 0;
+    height: 10vh;
+    font-size: 2.1rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+
+#saved-page-recipes-my-boards{
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #892074;
+    padding: 1.5% 0 0;
+}
+
+
+#saved-page-recipes-my-boards a{
+    color: #892074;
+    padding-bottom: 1%;
+    width: 18%;
+    text-align: center;
+}
+.active{
+    border-bottom:8px solid #892074;
+}
+
+
+#saved-page-recipes{
+    background-color:#E7E7E7 ;
+    padding: 5% 6% 5% 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#discover-recipes-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-end;
+    width:20% ;
+    height: 55vh;
+    background-color: #FFFFFF;
+    padding-bottom: 2%;
+    margin-right: 4%;
+    margin-bottom: 4%;
+}
+
+#saved-page-recipes-plus-icon{
+    font-size: 2.8rem;
+    color: #892074;
+}
+
+#discover-recipes-card h3{
+    color: #892074;
+    width: 40%;
+    text-align:justify;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+}
+
+#discover-recipes-card a{
+    color: #892074;
+    font-weight: 800;
+    font-size: 0.7rem;
+}
+
+
+#saved-page-added-from-recipes{
+    display: flex;
+    flex-direction: column;
+    width:20% ;
+    height: 55vh;
+    background-color: #FFFFFF;
+    border-bottom: 3px solid #77E2E1;
+    margin-right: 4%;
+    margin-bottom: 4%;
+}
+
+#saved-page-added-from-recipes img{
+    width: 100%;
+    height: 40vh;
+}
+
+#saved-page-added-from-recipes h3{
+    padding-left: 3%;
+    padding-top: 4%;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-size:1rem;
+}
+
+#added-recipes-card{
+    display: flex;
+    flex-direction: column;
+    width:20% ;
+    height: 55vh;
+    background-color: #FFFFFF;
+    border-bottom: 3px solid #77E2E1;
+    margin-right: 4%;
+    margin-bottom: 4%;
+}
+
+#added-recipes-card img{
+    width: 100%;
+    height: 40vh;
+}
+
+#added-recipes-card h3{
+    padding-left: 3%;
+    padding-top: 4%;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-size:1rem;
+}
+
+
+#saved-page-my-boards{
+    background-color:#E7E7E7 ;
+    padding: 5% 6% 5% 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#new-board-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width:20% ;
+    height: 55vh;
+    background-color: #FFFFFF;
+    padding-bottom: 2%;
+    margin-right: 4%;
+    margin-bottom: 4%;
+}
+
+#saved-page-my-boards-plus-icon{
+    font-size: 2.8rem;
+    color: #892074;
+}
+
+#new-board-card h3{
+    color: #892074;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+}

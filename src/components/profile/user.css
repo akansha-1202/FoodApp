@@ -1,0 +1,13 @@
+#user-profile-page-gradient{
+    height: 35vh;
+    background: linear-gradient(10deg,#892074 5%,#77E2E1 100%)
+   
+}
+#main-body{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#user-profile-page-profile-photo img{
+    border: 1px solid;
+    padding: 0;
+}
