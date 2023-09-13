@@ -105,7 +105,7 @@ export const homeData4 = [
         },
         {
           number:"59",
-          subHeading: "59 cool cucumber recipes",
+          subHeading: "cool cucumber recipes",
           images:
             "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_750,ar_1:1/v1/img/recipes/94/96/4/J712SaFmTWYyv9mWmeCN_0S9A0929.jpg",
         },

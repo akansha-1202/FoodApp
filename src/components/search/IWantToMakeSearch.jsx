@@ -13,7 +13,7 @@ const IWantToMakeSearch = () => {
     const APP_KEY = 'cd27f1ff1e262cfc703a6dd8a6814abf'
 
     const getSearchRecipes = (searchQuery) => {
-        axios.get(`https://api.edamam.com/search?q=${search}&app_id=${APP_ID}&app_key=${APP_KEY}`)
+        axios.get(`https://api.edamam.com/search?q=${search}&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=60`)
             .then((response) => setData(response.data.hits))
             .catch((error) => console.log("Error", error))
         console.log(data)
@@ -27,7 +27,7 @@ const IWantToMakeSearch = () => {
                             <div id='i-want-to-make-search-bar-and-text'>
                                 <h3>I WANT TO MAKE</h3>
                                 <div id='i-want-to-make-search-bar'>
-                                    <AiOutlineSearch />
+                                    <AiOutlineSearch fontSize="1.5rem"/>
                                     <input type='search' placeholder='Search here or try our suggestions below' value={search} onChange={(e) => setSearch(e.target.value)}></input>
                                     <button onClick={() => getSearchRecipes(search)}>SEARCH</button>
                                 </div>

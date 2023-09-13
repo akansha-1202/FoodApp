@@ -6,7 +6,7 @@ import { BsFillPlusCircleFill } from 'react-icons/bs'
 import axios from 'axios'
 
 const SavedRecipes = ({ recipe }) => {
-    // const token = localStorage.getItem('recievedToken')
+    // const token = localStorage.getItem('token')
 
     const navigate = useNavigate()
 

@@ -1,14 +1,14 @@
 import React from 'react'
-// import './RedirectedPagesCss.css'
+import './addRecipe.css'
 import { Link, useNavigate } from 'react-router-dom'
-// import IWantToMakeSearch from '../search/IWantToMakeSearch'
+import IWantToMakeSearch from '../search/IWantToMakeSearch'
 import { useState } from 'react'
 import { AiOutlineCamera } from 'react-icons/ai'
 import { AiFillCamera } from 'react-icons/ai'
 import axios from 'axios'
 
 const AddRecipe = () => {
-    // const token = localStorage.getItem('recievedToken')
+    // const token = localStorage.getItem('token')
 
     const [recipeTitle, setRecipeTitle] = useState('')
     const [recipeDescription, setRecipeDescription] = useState('')
@@ -56,10 +56,13 @@ const AddRecipe = () => {
                     <textarea placeholder='Recipe Description' onChange={(e) => { setRecipeDescription(e.target.value) }}></textarea>
                     <h3>CATEGORIES</h3>
                     <hr />
-                    <input type='text' placeholder='Ex : Mexican,Desert,Pudding,Brunch' onChange={(e) => { setRecipeCategory(e.target.value) }}></input>
+                    <input type='text' placeholder='Ex : Mexican,Desert,Pudding,Brunch' onChange={(e) => { setRecipeCategory(e.target.value) }} id="add-your-own-recipe-page-category"/>
                     <div id='add-your-own-recipe-page-photo-timings'>
                         <div id='add-your-own-recipe-page-photo'>
-                            {selectedImage === null ? <div id='add-your-own-recipe-page-photo-make-it-shine-camera-icon-one'><p>MAKE IT SHINE !!!</p><AiFillCamera id='add-your-own-recipe-page-photo-camera-icon-one' /></div> :
+                            {selectedImage === null ? 
+                            <div id='add-your-own-recipe-page-photo-make-it-shine-camera-icon-one'>
+                                <p>MAKE IT SHINE !!!</p>
+                                <AiFillCamera id='add-your-own-recipe-page-photo-camera-icon-one' /></div> :
                                 <div>
                                     <img alt="not found" src={URL.createObjectURL(selectedImage)} id='add-your-own-recipe-page-photo-recipe-image' />
                                 </div>
@@ -81,7 +84,7 @@ const AddRecipe = () => {
                             <h5>COOK TIME :</h5>
                             <input type='text' onChange={(e) => { setRecipeCookTime(e.target.value) }}></input>
                             <select onChange={(e) => { setRecipeCookTime(e.target.value) }}>
-                                <option value='minutes'>MINUTES</option>
+                                <option value='minutes' >MINUTES</option>
                                 <option value='hours'>HOURS</option>
                                 <option value='days'>DAYS</option>
                             </select>
@@ -99,10 +102,14 @@ const AddRecipe = () => {
                     <textarea placeholder='Ex : Place all ingredients in a blender' onChange={(e) => { setRecipeDirections(e.target.value) }}></textarea>
                     <h4>SAVE THIS RECIPE AS :</h4>
                     <div id='add-your-own-recipe-page-save-recipe-as'>
-                        <input type='radio' id="public" name="saverecipeas" value="public" onChange={(e) => { setRecipeSaveRecipeAs(e.target.value) }}></input>
+                        <div>
+                        <input type='radio' id="public" name="saverecipeas" value="public" onChange={(e) => { setRecipeSaveRecipeAs(e.target.value) }}/>
                         <label for='public'>Public</label>
+                        </div>
+                        <div>
                         <input type='radio' id="private" name="saverecipeas" value="private" onChange={(e) => { setRecipeSaveRecipeAs(e.target.value) }}></input>
                         <label for='private'>Private</label>
+                        </div>
                     </div>
                     <p>When you click Save, additional changes cannot be made until your recipe is published. <br /> By clicking Save, you agree to our <Link to='https://corporate.discovery.com/visitor-agreement/' target='_blank'>terms of service</Link></p>
                     <div id='add-your-own-recipe-page-submit-btn-cancel-text'>
@@ -114,7 +121,7 @@ const AddRecipe = () => {
                     </div>
                 </div>
             </div>
-            {/* <IWantToMakeSearch /> */}
+            <IWantToMakeSearch />
         </>
     )
 }

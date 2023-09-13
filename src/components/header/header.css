@@ -92,8 +92,6 @@ button{
     text-decoration: none;
 }
 
-
-
 .dropdown-close{
     display: none;
 }
@@ -107,7 +105,7 @@ button{
     top: 100%; /* Position it just below the profile icon */
     right: 0;  /* Position it to the right */
     overflow-y: auto; 
-   z-index: 1000; /* Adjust the value as needed */
+    z-index: 1000; /* Adjust the value as needed */
 }
 
 
@@ -244,7 +242,7 @@ button{
     position: absolute;
     top: 100%; /* Position it just below the profile icon */
     right: 0;  /* Position it to the right */
-    height: 140px; /* Set a fixed height */
+    height: 110px; /* Set a fixed height */
     overflow-y: hidden; 
    z-index: 1000; /* Adjust the value as needed */
 }
@@ -507,6 +505,10 @@ header{
     top: 52%;
     left: 50%;
     width: 75%;
+}
+
+.nav-buttons{
+    padding: 0;
 }
 
 }

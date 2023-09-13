@@ -13,7 +13,6 @@ import SavedRecipes from './saved/SavedRecipes'
 
 export default function RoutingFiles() {
   const [recipe, setRecipe] = useState([]);
-  console.log(recipe)
   const saveRecipe = (data) => {
     setRecipe([...recipe, { ...data }])
   }
@@ -26,7 +25,7 @@ export default function RoutingFiles() {
             <Route path='/search' element={<SearchPage/>}/>
             <Route path="/recipes/:recipename" element={<Categories/>}/>
             <Route path='/recipedescription/:recipename' element={<CategoriesDescription saveRecipe={saveRecipe} />}></Route>
-            <Route path='/user/:filtername' element={<User />}/>
+            <Route path='/userprofile/:filtername' element={<User />}/>
             <Route path='/saved/recipes' element={<SavedRecipes recipe={recipe} />}/>
             <Route path='/saved/myboards' element={<MyBoards />}/>
             <Route path='/addRecipe' element={<AddRecipe/>}/>

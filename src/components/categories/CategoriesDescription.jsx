@@ -26,7 +26,34 @@ const CategoriesDescription = ({ saveRecipe }) => {
             .then((response) => setData(response.data.hits))
             .catch((error) => console.log("Error", error))
     }, [recipename])
+    
 
+    // const token = localStorage.getItem("token");
+    //   const email = localStorage.getItem("email");
+
+
+    // //   if (!token) {
+    // //     alert("Please Login First") 
+
+    // //     return; // Exit the function if no valid token is found
+    // //   }
+
+    // const headers = {
+    //     authorization: `Bearer ${token}`,
+    //   };
+
+    const savedFavRecipe = () =>{
+        // axios.post(`http://localhost:8080/api/savedRecipe`,{email},{headers})
+        const token = localStorage.getItem("token");
+        
+        if(!token){
+            alert("Please Login first");
+        }
+        else{
+            alert("Recipe Saved Successfully!!!")
+        }
+        console.log("savedItems");
+    }
     return (
         <>
             <div id='recipe-categories-description-page'>
@@ -43,8 +70,8 @@ const CategoriesDescription = ({ saveRecipe }) => {
                             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
                             <div id='recipe-categories-description-page-container-icons'>
                                 <div onClick={() => {
+                                     savedFavRecipe()
                                     saveRecipe(element)
-                                    alert("Recipe Saved Successfully!!!")
                                 }}><BsBookmark fontSize="1.5rem"/></div>
                                 <div><TfiDownload fontSize="1.5rem"/></div>
                                 <div>< BsPrinter fontSize="1.5rem"/></div>
@@ -71,7 +98,7 @@ const CategoriesDescription = ({ saveRecipe }) => {
                     ))
                 }
 
-            
+               <div id='right-side-container'>
                 <div id="recipe-categories-description-social-icons">
                     <Link to="https://in.pinterest.com/fooddotcom/" target="_blank" style={{backgroundColor:"red"}}>
                         <BiLogoPinterestAlt fontSize="1.8rem" color="white"/>
@@ -84,6 +111,12 @@ const CategoriesDescription = ({ saveRecipe }) => {
                     </Link>
                  </div>
 
+                 <div  className='fixed-advertisement'>
+                    <div id='advertisement'>
+                    <img src='https://images.food52.com/7bOTbDlMQrmll6_52p0Q7082O-o=/a26a2296-bbb5-4c23-a1c9-9bc66b057e7c--wrap-sandwich.gif' alt='' id='gif-img'/>
+                    </div>
+                 </div>
+            </div>
             </div>
             <FindMoreRecipes/>
         </>

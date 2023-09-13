@@ -13,7 +13,7 @@ const FindMoreRecipes = () => {
     const APP_KEY = 'cd27f1ff1e262cfc703a6dd8a6814abf'
 
     const getSearchRecipes = (searchQuery) => {
-        axios.get(`https://api.edamam.com/search?q=${search}&app_id=${APP_ID}&app_key=${APP_KEY}`)
+        axios.get(`https://api.edamam.com/search?q=${search}&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=60`)
             .then((response) => setData(response.data.hits))
             .catch((error) => console.log("Error", error))
         console.log(data)

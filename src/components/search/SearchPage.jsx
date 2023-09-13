@@ -14,7 +14,7 @@ const SearchPage = () => {
     const APP_KEY = 'a26cf3b8f2504e6eb9e9db8524fe4a27'
 
     const getSearchRecipes = (searchQuery) => {
-        axios.get(`https://api.edamam.com/search?q=${search}&app_id=${APP_ID}&app_key=${APP_KEY}`)
+        axios.get(`https://api.edamam.com/search?q=${search}&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=60`)
             .then((response) => setData(response.data.hits))
             .catch((error) => console.log("Error", error))
         console.log(data)
@@ -28,10 +28,11 @@ const SearchPage = () => {
                         <div id='search-page-i-want-to-make-search-bar-and-text'>
                             <h3>I WANT TO MAKE</h3>
                             <div id='search-page-i-want-to-make-search-bar'>
-                                <AiOutlineSearch id='search-page-i-want-to-make-search-bar-search-icon' />
+                                <AiOutlineSearch id='search-page-i-want-to-make-search-bar-search-icon' fontSize="1.4rem" color='grey'/>
                                 <input type='search' value={search} onChange={(e) => setSearch(e.target.value)}></input>
+                                                            </div>
+
                                 <button onClick={() => getSearchRecipes(search)}>SEARCH</button>
-                            </div>
                         </div>
                     </div>
                 </div>

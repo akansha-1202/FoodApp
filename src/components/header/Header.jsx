@@ -105,9 +105,9 @@ export default function Header() {
                         <div className="navbar-logged-in-dropdown">
                             <img src="https://img.sndimg.com/food/image/upload/v1/gk-static/gk/img/avatar/pie.png" alt="profile-icon" className="profile-icon" onClick={Dropdown}></img>
                             <div className={dropdown ? "navbar-logged-in-dropdown-content" : "dropdown-close"}>
-                                <Link to='/user/activity' className="navbar-logged-in-dropdown-links links">Profile</Link>
+                                <Link to='/userprofile/activity' className="navbar-logged-in-dropdown-links links">Profile</Link>
                                 <Link to='/addRecipe' className="navbar-logged-in-dropdown-links links">Add a Recipe</Link>
-                                <Link to='/usersettings' className="navbar-logged-in-dropdown-links links">User Settings</Link>
+                                {/* <Link to='/usersettings' className="navbar-logged-in-dropdown-links links">User Settings</Link> */}
                                 <Link to='/' className="navbar-logged-in-dropdown-links links" onClick={logout}>Logout</Link>
                             </div>
                         </div>

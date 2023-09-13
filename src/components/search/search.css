@@ -143,19 +143,19 @@
 }
 
 #i-want-to-make-search-bar input[type=search]{
-    width: 20rem;
-    height: 2rem;
+    width: 80%;
+    height: 6vh;
     border: none;
     margin-left: 0.3rem;
     outline: none;
-    font-size: 0.9rem;
+    font-size: 0.6rem;
     font-weight: 900;
 }
 
 #i-want-to-make-search-bar button{
-    width: 7rem;
+    width: 26%;
     height: 2rem;
-    font-size: 1rem;
+    font-size: 0.6rem;
     font-weight: 900;
     background-color: #f5ce35;
     border: none;
@@ -193,7 +193,7 @@
 }
 
 #i-want-to-make-search-search-data {
-    margin-top: 3rem;
+    margin-top: 0rem; 
 }
 
 #i-want-to-make-search-search-data h2 {
@@ -212,20 +212,20 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 3rem;
-    width: 70%;
+    width: 80%;
 }
 
 #i-want-to-make-search-search-data-cards {
-    width: 17rem;
+    width: 30%;
     margin-bottom: 3rem;
+    margin-top: 2rem;
     text-align: center;
     border: 1px solid rgb(238, 238, 238);
-    padding: 1rem;
     cursor: pointer;
 }
 
 #i-want-to-make-search-search-data-cards img {
-    width: 15rem;
+    width: 100%;
     height: 15rem;
     margin-bottom: 1rem;
 }
@@ -245,38 +245,47 @@
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    width: 100%;
 }
 
 #search-page-i-want-to-make-container{
     background-color: white;
     padding: 0.7rem 1rem;
+    width: 80%;
+    height: 14vh;
+
 }
 
 #search-page-i-want-to-make-search-bar-and-text{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     border-bottom: 3px solid purple;
 }
 
 #search-page-i-want-to-make-search-bar-and-text h3{
     margin-right: 0.5rem;
+    width: 25%;
 }
-#search-page-i-want-to-make-container input[type=search]{
-    width: 45rem;
+#search-page-i-want-to-make-search-bar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+#search-page-i-want-to-make-search-bar input[type=search]{
+    width: 100%;
     height: 2rem;
     border: none;
     outline: none;
     font-size: 1.2rem;
     padding-left: 0.5rem;
+    margin-bottom: -0.2rem;
+    background: #FFFFFF;
 }
 
-#search-page-i-want-to-make-search-bar{
-    display: flex;
-    align-items: center;
-}
 
-#search-page-i-want-to-make-search-bar button{
-    width: 7rem;
+#search-page-i-want-to-make-search-bar-and-text button{
+    width: 20%;
     height: 2rem;
     font-size: 1rem;
     font-weight: 900;
@@ -284,13 +293,13 @@
     border: none;
     border-radius: 0.2rem;
     cursor: pointer;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0rem;
     margin-left: 1rem;
 }
 
 #search-page-your-recent-searches{
     color: white;
-    width: 69%;
+    width: 100%;
     margin-top: 0.5rem;
     margin-bottom: 3rem;
     font-weight: 900;
@@ -316,20 +325,19 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 3rem;
-    width: 70%;
+    width: 80%;
 }
 
 #search-page-search-data-cards {
-    width: 17rem;
+    width: 30%;
     margin-bottom: 3rem;
     text-align: center;
     border: 1px solid rgb(238, 238, 238);
-    padding: 1rem;
     cursor: pointer;
 }
 
 #search-page-search-data-cards img {
-    width: 15rem;
+    width: 100%;
     height: 15rem;
     margin-bottom: 1rem;
 }
@@ -337,8 +345,8 @@
 
 @media screen  and (min-width: 745px) and (max-width: 1209px){
     #find-more-recipes {
-        width: 106.5%;
-        margin-left: -1.5rem;
+        width: 100%;
+        margin-left: 0rem;
         /* margin-right:-8rem ;  */
     }
     
@@ -421,6 +429,94 @@
         /* width: 15rem; */
     }
 
+
+
+    /* i want to make */
+      
+    #i-want-to-make-search-bar-and-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 0.3rem solid purple;
+    }
+    
+    #i-want-to-make-search-bar-and-text h3{
+        margin-right: 1rem;
+        font-size: 0.8rem;
+    }
+    
+    #i-want-to-make-search-bar{
+        display: flex;
+        align-items: center;
+    }
+    
+    #i-want-to-make-search-bar input[type=search]{
+        width: 80%;
+        height: 5vh;
+        border: none;
+        margin-left: 0.3rem;
+        outline: none;
+        font-size: 0.6rem;
+        font-weight: 900;
+    }
+    
+    #i-want-to-make-search-bar button{
+        width: 26%;
+        height: 2rem;
+        font-size: 0.6rem;
+        font-weight: 900;
+        background-color: #f5ce35;
+        border: none;
+        border-radius: 0.2rem;
+        cursor: pointer;
+        margin-bottom: 0.2rem;
+        margin-left: 1rem;
+    }
+
+
+
+
+      #i-want-to-make-search-search-data-cards-container {
+        justify-content: space-between;
+        width: 80%;
+    }
+    
+    #i-want-to-make-search-search-data-cards {
+        width: 40%;
+        margin-bottom: 3rem;
+        text-align: center;
+        border: 1px solid rgb(238, 238, 238);
+        cursor: pointer;
+    }
+    
+   
+
+    /* search */
+
+    #search-page-i-want-to-make-container{
+        background-color: white;
+        padding: 0.7rem 1rem;
+        width: 80%;
+        height: 7vh;
+    
+    }
+    
+    #search-page-i-want-to-make-search-bar-and-text h3{
+        margin-right: 0.5rem;
+        width: 25%;
+        font-size: 0.7rem;
+    }
+
+    #search-page-i-want-to-make-search-bar-and-text button{
+        width: 20%;
+        height: 1.5rem;
+        font-size: 0.7rem;
+        font-weight: 900;
+       
+        margin-bottom: 0rem;
+        margin-left: 1rem;
+    }
+    
 }
 
 
@@ -429,7 +525,7 @@
 
     #find-more-recipes {
         width: 100%;
-        margin-left: -1.5rem;
+        margin-left: 0rem;
         /* margin-right:-8rem ;  */
     }
     
@@ -484,14 +580,15 @@
     
     #find-more-recipes-search-data-cards-container {
         display: flex;
+        /* flex-direction: column; */
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: space-around;
         gap: 3rem;
         width: 100%;
     }
     
     #find-more-recipes-search-data-cards {
-        width: 100%;
+        width: 85%;
         margin-bottom: 1rem;
         text-align: center;
         border: 1px solid rgb(238, 238, 238);
@@ -502,12 +599,124 @@
     
     #find-more-recipes-search-data-cards img {
         width: 100%;
-        /* height: 50rem; */
+        height:29vh;
         margin-bottom: 0rem;
     }
     
     #find-more-recipes-search-data-cards h3 {
         font-size: 1rem;
         /* width: 15rem; */
+    }
+
+
+
+
+    /* i want to make */
+
+
+    #i-want-to-make-search-bar-and-text-container{
+        width: 68%;
+        padding: 1rem;
+        margin-left: 3rem;
+    }
+    #i-want-to-make-search-bar-and-text{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        border-bottom: 0.3rem solid purple;
+    }
+    
+    #i-want-to-make-search-bar-and-text h3{
+        margin-right: 0rem;
+        font-size: 0.6rem;
+    }
+    
+    #i-want-to-make-search-bar{
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly ;
+    }
+    
+    #i-want-to-make-search-bar input[type=search]{
+        width: 80%;
+        height: 5vh;
+        border: none;
+        margin-left: 0.3rem;
+        outline: none;
+        font-size: 0.6rem;
+        font-weight: 900;
+    }
+    
+    #i-want-to-make-search-bar button{
+        width: 26%;
+        height: 2rem;
+        font-size: 0.4rem;
+        padding: 1%;
+        font-weight: 900;
+        background-color: #f5ce35;
+        border: none;
+        border-radius: 0.2rem;
+        cursor: pointer;
+        margin-bottom: 0.2rem;
+        margin-left: 0rem;
+    }
+      
+
+
+
+    #i-want-to-make-search-search-data-cards-container {
+        justify-content: space-between;
+        /* gap: 3rem; */
+        width: 80%;
+    }
+    
+    #i-want-to-make-search-search-data-cards {
+        width: 40%;
+        margin-bottom: 3rem;
+        font-size: 0.7rem;
+    }
+    #i-want-to-make-search-search-data-cards img {
+        width: 100%;
+        height: 20vh;
+        margin-bottom: 1rem;
+    }
+    
+
+    
+    /* search */
+
+    #search-page-i-want-to-make-container{
+        background-color: white;
+        padding: 0.7rem 1rem;
+        width: 80%;
+        height: 9vh;
+    
+    }
+    
+    #search-page-i-want-to-make-search-bar-and-text h3{
+        margin-right: 0.5rem;
+        width: 29%;
+        font-size: 0.4rem;
+    }
+    #search-page-i-want-to-make-search-bar input[type=search]{
+        width: 100%;
+        height: 2rem;
+        border: none;
+        outline: none;
+        font-size: 1.2rem;
+        padding-left: 0.5rem;
+        margin-bottom: 0rem;
+        background: #FFFFFF;
+    }
+
+    #search-page-i-want-to-make-search-bar-and-text button{
+        width: 20%;
+        height: 1.3rem;
+        font-size: 0.4rem;
+        font-weight: 900;
+         padding: 1%;
+        margin-bottom: 0rem;
+        margin-left: 1rem;
     }
 }

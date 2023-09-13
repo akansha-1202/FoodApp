@@ -1,13 +1,166 @@
+
+
+
+#user-profile-page{
+    background-color: rgb(238,238,238);
+    padding-bottom: 5rem;
+}
+
 #user-profile-page-gradient{
     height: 35vh;
     background: linear-gradient(10deg,#892074 5%,#77E2E1 100%)
    
 }
-#main-body{
-    margin-left: 10%;
-    margin-right: 10%;
-}
+
 #user-profile-page-profile-photo img{
     border: 1px solid;
     padding: 0;
+}
+
+
+
+
+#user-profile-page-profile-photo-followers-following{
+    position: absolute;
+    top: 10rem;
+    left: 15rem;
+}
+
+
+#user-profile-page-followers-following{
+    display: flex;
+    text-align: center;
+    padding:5% 0;
+}
+
+#user-profile-page-followers-following div{
+    padding: 0.3rem 1rem;
+    border: 1px solid black;
+    cursor: pointer;
+    height: 9vh;
+}
+#user-profile-page-followers-following p{
+    margin: 0;
+    padding: 0;
+}
+
+
+#user-profile-page-followers-following div:hover{
+    background-color: white;
+}
+
+#user-profile-page-followers-following p:nth-child(n+1) {
+    font-size: 0.7rem;
+    font-weight: 900;
+}
+
+#user-profile-page-followers-following p:nth-child(n+2){
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+#user-profile-page-username p{
+    font-size: 1.2rem;
+    font-weight: 900;
+    position: absolute;
+    top: 19rem;
+    left: 29rem;
+}
+
+#user-profile-page-filters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12rem;
+}
+
+#user-profile-page-filters-container{
+    width: 70%;
+    display: flex;
+    gap: 5rem;
+    background-color: white;
+    padding: 2rem;
+}
+
+#user-profile-page-filters-container div{
+    display: flex;
+    flex-direction: column;
+}
+
+#user-profile-page-filters-container p{
+    margin-bottom: 2rem;
+    color: gray;
+    font-weight: 900;
+    font-size: 0.8rem;
+}
+
+#user-profile-page-filters-container a{
+    text-decoration: none;
+    color: black;
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+#user-profile-page-filters-container .active{
+    color: purple;
+    font-weight: 900;
+}
+
+
+@media screen and (min-width:745px) and (max-width:1209px){
+    #user-profile-page-gradient{
+        height: 28vh;
+        background: linear-gradient(10deg,#892074 5%,#77E2E1 100%)
+       
+    }
+    #user-profile-page-profile-photo-followers-following{
+        position: absolute;
+        top: 14rem;
+        left: 2rem;
+    }
+    
+    
+    #user-profile-page-username p{
+        font-size: 1.2rem;
+        font-weight: 900;
+        position: absolute;
+        top: 23rem;
+        left: 17rem;
+    }
+    
+
+}
+
+
+@media screen and (max-width:744px){
+    
+
+#user-profile-page-profile-photo-followers-following{
+    position: absolute;
+    top: 16rem;
+    left: 2rem;
+}
+
+
+#user-profile-page-username p{
+    font-size: 1.2rem;
+    font-weight: 900;
+    position: absolute;
+    top: 24rem;
+    left: 17rem;
+}
+
+
+
+
+
+#user-profile-page-filters-container{
+    width: 90%;
+    display: flex;
+    gap: 5rem;
+    background-color: white;
+    padding: 2rem;
+}
+
+
 }

@@ -156,3 +156,168 @@
     font-weight: 900;
     letter-spacing: 0.1rem;
 }
+
+
+
+@media screen and (min-width:745px) and (max-width:1209px){
+    #saved-page-header h2{
+        padding-top: 2%;
+        height: 7vh;
+        font-size: 1.7rem;
+       
+    }
+    
+#saved-page-recipes-my-boards{
+  
+    font-size: 1.5rem;
+  
+}
+
+
+#saved-page-recipes-my-boards a{
+    color: #892074;
+    padding-bottom: 1%;
+    width: 22%;
+    text-align: center;
+}
+
+
+
+#discover-recipes-card{
+ 
+    width:40% ;
+    height: 40vh;
+  
+}
+
+
+
+#discover-recipes-card h3{
+    width: 40%;
+}
+
+#discover-recipes-card a{
+    color: #892074;
+    font-weight: 800;
+    font-size: 0.7rem;
+}
+
+
+#saved-page-added-from-recipes{
+  
+    width:40% ;
+    height: 40vh;
+}
+
+#saved-page-added-from-recipes img{
+    width: 100%;
+    height: 20vh;
+}
+
+
+#added-recipes-card{
+   
+    width:40% ;
+    height: 40vh;
+  
+}
+
+#added-recipes-card img{
+    width: 100%;
+    height: 30vh;
+}
+
+
+
+
+#new-board-card{  
+    width:40% ;
+    height: 40vh;
+  
+}
+
+
+
+}
+
+
+@media screen and (max-width:744px){
+    #saved-page-header h2{
+        padding-top: 2%;
+        height: 7vh;
+        font-size: 1.7rem;
+       
+    }
+    
+#saved-page-recipes-my-boards{
+  
+    font-size: 1rem;
+  
+}
+
+
+#saved-page-recipes-my-boards a{
+    color: #892074;
+    padding-bottom: 1%;
+    width: 27%;
+    text-align: center;
+}
+
+
+
+#discover-recipes-card{
+    width:42% ;
+    height: 40vh;
+  
+}
+
+
+
+#discover-recipes-card h3{
+    width: 45%;
+    font-size: 0.7rem;
+
+}
+
+#discover-recipes-card a{
+    color: #892074;
+    font-weight: 800;
+    font-size: 0.7rem;
+}
+
+
+#saved-page-added-from-recipes{
+  
+    width:42% ;
+    height: 40vh;
+}
+
+#saved-page-added-from-recipes img{
+    width: 100%;
+    height: 20vh;
+}
+
+
+#added-recipes-card{
+   
+    width:42% ;
+    height: 40vh;
+  
+}
+
+#added-recipes-card img{
+    width: 100%;
+    height: 30vh;
+}
+
+
+
+
+#new-board-card{  
+    width:42% ;
+    height: 40vh;
+    font-size: 1rem;
+  
+}
+
+}

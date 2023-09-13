@@ -119,7 +119,9 @@ export default function Home() {
                   <img src={item.images} alt="images" />
                   <div className="text-home1">
                     <div id="collection">COLLECTION</div>
-                    <div id="subHead">{item.subHeading}</div>
+                    <div id="subHead">
+                      {item.number} {item.subHeading}
+                    </div>
                   </div>
                 </div>
               </Link>

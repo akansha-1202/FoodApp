@@ -26,6 +26,7 @@ const Categories = () => {
   return (
     <>
       <div id="recipe-categories-page-one">
+        <div>
         <div id="recipe-categories-page-one-heading-description-text-container">
           <h1 id="recipe-categories-page-one-heading">
            {data.length} {params.recipename.toUpperCase()}
@@ -49,6 +50,7 @@ const Categories = () => {
           </div>
         </div>
         <div id="recipe-categories-page-recipes-container">
+          <div id="left-side">
             {data.map((element, index) => (
               <div id="recipe-categories-page-recipes" key={index}>
                 <Link to={`/recipedescription/${element.recipe.label}`}  >
@@ -67,9 +69,21 @@ const Categories = () => {
                 </Link>
               </div>
             ))}
+            </div>
+
+           <div  className='category-fixed-advertisement'>
+            <div id='category-advertisement'>
+              <img src='https://img.hellofresh.com/w_3840,q_auto,f_auto,c_limit,fl_lossy/hellofresh_website/au/cms/howitworks/Global_Website_HowItWorks_EN.gif' alt='' id='cat-gif-img'/>
+            </div>
         </div>
-        <IWantToMakeSearch/>
+        </div>
+        </div>
+
+       
+        
       </div>
+      <IWantToMakeSearch/>
+
     </>
   );
 };
