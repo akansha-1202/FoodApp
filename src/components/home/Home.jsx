@@ -1,6 +1,7 @@
 import React from "react";
 import "./home.css";
 import {
+  comment,
   homeData1,
   homeData2,
   homeData3,
@@ -8,6 +9,7 @@ import {
   homeData5,
   homeData6,
 } from "./homeData";
+import {AiOutlineHeart} from "react-icons/ai"
 import FindMoreRecipes from '../search/FindMoreRecipes';
 
 import { Link } from "react-router-dom";
@@ -33,19 +35,43 @@ export default function Home() {
 
       <div className="bar"></div>
 
-      {/* <div className="layout-item">
+      {comment.map((item, index) => (
+      <div className="layout-item" key={index}>
         <div className="heading">
-          <h2>FRESH FROM OUR COMMUNITY</h2>
-          <button>View All</button>
+          <h2>{item.heading}</h2>
         </div>
 
         <div className="review-box">
-          <div></div>
-          <div></div>
-          <div></div>
+        {item.content.map((item, index) => (
+          <div id="home-comment">
+             <div id="comment-header">
+              <img src={item.icon} alt="comment"/>
+              <p>{item.user} <span>{item.mid}</span> {item.recipe}</p>
+             </div>
+           <div id="comment-content">{item.comment}</div>
+           <div id="comment-footer" className="comment-bottom">
+            <p style={{color:"#706666"}}>{item.time}</p>
+            <p>REPLY  <AiOutlineHeart color="red" fontSize="0.8rem"/></p>
+           </div>
+          </div>
+          ))} 
+          {item.contentImage.map((item, index) => (
+          <div id="home-comment">
+                <div id="comment-header">
+                  <img src={item.icon} alt="comment"/>
+                  <p>{item.user} <span>{item.mid}</span> {item.recipe}</p>
+                </div>
+               <div id="comment-content"><img src={item.photo} alt="comment"/></div>
+                <div id="comment-footer">
+                  <p style={{color:"#706666"}}>{item.time}</p>
+                  <p>REPLY <AiOutlineHeart color="red" fontSize="0.8rem"/></p>
+                </div>
+          </div>
+          ))}
         </div>
-        <button>View All</button>
-      </div> */}
+      </div>
+
+))}
 
       {homeData1.map((item, index) => (
         <div className="layout-item" key={index}>

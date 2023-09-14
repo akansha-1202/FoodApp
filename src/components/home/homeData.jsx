@@ -1,3 +1,38 @@
+export const comment = [
+  {
+    heading: "FRESH FROM OUR COMMUNITY",
+    content : [
+      {
+       icon :"https://geniuskitchen.sndimg.com/gk/img/avatar/drink.png",
+       user : "Rebeccaehite",
+       mid : "reviewed",
+       recipe : "Apple Cider Brisket",
+       comment : "My brisket tastes way to vinegary! How do I save it at this point. It is nice and tender but as you take a bite the vinegar smell is overwhelming!",
+       time : "2 HOURS AGO"
+      },
+      {
+        icon :"https://geniuskitchen.sndimg.com/gk/img/avatar/pop.png",
+        user : "rhondafreeman2",
+        mid : "asked a question about",
+        recipe : "Rosemary and Toasted",
+        comment : "When do you score your loaf? I did it before egg wash and It almost smoothed them out and I Like it so much I will buy more... Thanks you!",
+        time : "7 HOURS AGO"
+       },
+
+    ],
+    contentImage:[
+      {
+        icon :"https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_48,ar_1:1/v1/pickle_avatar/20140621/vzNnbosjQyieICMe1cEk_IMG_0135.JPG",
+        user : "Oliver1010",
+        mid : "added a photo to",
+        recipe : "Chicken Francaise",
+        photo : "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_744,ar_4:3/v1/img/recipes/14/13/09/sUPnUY3wSRiUi8bDuNGF_20230913_182216.jpg",
+        time : "12 HOURS AGO"
+       }
+    ]
+  }
+]
+
 export const homeData1 = [
   {
     heading: "WHAT WE'RE CRAVING",
@@ -242,6 +277,8 @@ export const homeData6 = [
       ],
     },
   ];
+
+
 
 
   
