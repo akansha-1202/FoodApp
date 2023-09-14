@@ -30,10 +30,10 @@ const Footer = () => {
                         </div>
                     </div>
                     <div id='footer-nav-links-left-part'>
-                        <Link to='/allcategories'>All Categories</Link>
-                        <Link to='/sitemap'>Site Map</Link>
-                        <Link to='/aboutus'>About Us</Link>
-                        <Link to='https://help.food.com/hc/en-us' target='_blank'>Help</Link>
+                        <p >All Categories</p>
+                        <p >Site Map</p>
+                        <p >About Us</p>
+                        <p><Link to='https://help.food.com/hc/en-us' target='_blank'>Help</Link></p>
                     </div>
                 </div>
                 <div id='footer-right-part'>
