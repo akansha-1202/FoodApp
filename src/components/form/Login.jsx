@@ -5,6 +5,7 @@ import {FcGoogle} from "react-icons/fc"
 import {BsFacebook} from "react-icons/bs"
 import {AiOutlineAmazon} from "react-icons/ai"
 import {authenticateLogin} from "../services/Api"
+import { toast } from "react-toastify"
 import "./form.css"
 
 export default function Login({ toggleLoginSignup, togglePopup }) {
@@ -37,7 +38,13 @@ export default function Login({ toggleLoginSignup, togglePopup }) {
       console.log(response.data.user.email,"name");
       togglePopup()
         navigate(-1); // Move the navigation here
+        
+      toast.success("User Login Successfully", {
+        position: toast.POSITION.TOP_RIGHT
+      });
+      
       }
+
 
     }
      else{

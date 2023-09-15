@@ -11,6 +11,8 @@ import { GrFormClose } from 'react-icons/gr'
 import { navData } from "./navData";
 import Register from "../form/Register";
 import Login from "../form/Login";
+import { toast } from "react-toastify"
+
 
 export default function Header() {
   const [isMobile, setIsMobile] = useState(false);
@@ -26,6 +28,10 @@ export default function Header() {
   const logout = () => {
       localStorage.clear()
       navigate('/')
+      
+      toast.success("User Logged Out!!", {
+        position: toast.POSITION.TOP_RIGHT
+      });
   }
   const togglePopup = () => {
       setPopup(!popup)

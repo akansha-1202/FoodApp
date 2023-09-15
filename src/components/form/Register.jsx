@@ -5,6 +5,8 @@ import {FcGoogle} from "react-icons/fc"
 import {BsFacebook} from "react-icons/bs"
 import {AiOutlineAmazon} from "react-icons/ai"
 import {authenticateSignup} from "../services/Api"
+import { toast } from "react-toastify"
+
 import "./form.css"
 
 export default function Register({toggleLoginSignup, togglePopup}) {
@@ -31,6 +33,9 @@ export default function Register({toggleLoginSignup, togglePopup}) {
       localStorage.setItem("user_id", response.data.user._id);
       togglePopup()
       navigate(-1); // Move the navigation here
+      toast.success("User Register Successfully", {
+        position: toast.POSITION.TOP_RIGHT
+      });
     }
     else{
       alert(response.data.message)
