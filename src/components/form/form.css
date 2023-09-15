@@ -50,6 +50,19 @@ input {
   height: 2rem;
   position: relative;
   top: -3.5rem;
+  left: 10rem;
+  cursor: pointer;
+  font-size: 0.6rem;
+  font-weight: 900;
+  border: none;
+}
+
+
+#show-hide-signup-page {
+  width: 5rem;
+  height: 2rem;
+  position: relative;
+  top: -3.5rem;
   left: 12rem;
   cursor: pointer;
   font-size: 0.6rem;

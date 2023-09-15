@@ -1,7 +1,5 @@
 import axios from 'axios';
 
-// const url = 'https://food-recipe-backend-theta.vercel.app/api';
-
 const url = "https://food-q03d.onrender.com/api"
 
 // const url="http://localhost:8080/api"

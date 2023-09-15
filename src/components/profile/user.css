@@ -82,7 +82,7 @@
     padding: 2rem;
 }
 
-#user-profile-page-filters-container div{
+#user-profile-page-filters-container > div{
     display: flex;
     flex-direction: column;
 }
@@ -105,6 +105,58 @@
     color: purple;
     font-weight: 900;
 }
+
+
+
+#user-comment{
+    width: 80%;
+    border:2px solid #F2F2F2;
+    border-radius: 2px;
+    padding: 1%;
+    height: 40vh;
+    margin-bottom: 2%;
+  }
+  #user-header{
+    display: flex;
+    font-size: 0.9rem;
+    align-items: center;
+    gap: 10px;
+  }
+  #user-header img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  #user-header p{
+    color:#1769C6;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+  }
+  
+  #user-header span{
+    color: black;
+  }
+  #user-content{
+    padding: 3%;
+    line-height: 4.3vh;
+    color: #706666;
+    font-weight: 300;
+  }
+  #user-content img{
+     width: 100%;
+  }
+  #user-footer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  
+  .user-bottom{
+     position: relative;
+     bottom: -10px;
+  }
+  
 
 
 @media screen and (min-width:745px) and (max-width:1209px){

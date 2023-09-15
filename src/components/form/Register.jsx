@@ -28,6 +28,7 @@ export default function Register({toggleLoginSignup, togglePopup}) {
     if(signupToken !== undefined){
       localStorage.setItem("token", signupToken);
       localStorage.setItem("email", response.data.user.email);
+      localStorage.setItem("user_id", response.data.user._id);
       togglePopup()
       navigate(-1); // Move the navigation here
     }
@@ -61,7 +62,7 @@ export default function Register({toggleLoginSignup, togglePopup}) {
 
         <label htmlFor="pwd">PASSWORD</label><br/>
         <input type={showPassword ? 'text' : 'password'} placeholder='Password' id='pwd' onChange={(e) => { setPassword(e.target.value) }} required /><br />
-        <button onClick={toggleShowPassword} id='show-hide-login-page'>{showPassword ? "HIDE" : "SHOW"}</button>
+        <button onClick={toggleShowPassword} id='show-hide-signup-page'>{showPassword ? "HIDE" : "SHOW"}</button>
 
         {/* <input type='checkbox'></input>
         <div id='agreement-clause'>

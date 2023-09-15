@@ -55,6 +55,8 @@ export default function Home() {
            </div>
           </div>
           ))} 
+
+          
           {item.contentImage.map((item, index) => (
           <div id="home-comment">
                 <div id="comment-header">

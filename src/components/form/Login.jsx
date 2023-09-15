@@ -32,6 +32,8 @@ export default function Login({ toggleLoginSignup, togglePopup }) {
     if (loginToken !== undefined) {
       localStorage.setItem("token", loginToken);
       localStorage.setItem("email", response.data.user.email);
+      localStorage.setItem("user_id", response.data.user._id);
+
       console.log(response.data.user.email,"name");
       togglePopup()
         navigate(-1); // Move the navigation here

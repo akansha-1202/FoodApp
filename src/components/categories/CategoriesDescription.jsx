@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
+import { toast } from "react-toastify"
 import axios from 'axios'
 import FindMoreRecipes from '../search/FindMoreRecipes';
 // import { GrNext } from 'react-icons/gr'
@@ -27,32 +28,33 @@ const CategoriesDescription = ({ saveRecipe }) => {
             .catch((error) => console.log("Error", error))
     }, [recipename])
     
+// console.log(recipename);
+      const token = localStorage.getItem("token");
+      const user_id = localStorage.getItem("user_id");
 
-    // const token = localStorage.getItem("token");
-    //   const email = localStorage.getItem("email");
 
+    const headers = {
+        authorization: `Bearer ${token}`,
+      };
 
-    // //   if (!token) {
-    // //     alert("Please Login First") 
-
-    // //     return; // Exit the function if no valid token is found
-    // //   }
-
-    // const headers = {
-    //     authorization: `Bearer ${token}`,
-    //   };
-
-    const savedFavRecipe = () =>{
-        // axios.post(`http://localhost:8080/api/savedRecipe`,{email},{headers})
-        const token = localStorage.getItem("token");
+    const savedFavRecipe = (element) =>{
+        axios.post(`https://food-q03d.onrender.com/api/savedRecipe`,{user_id, element},{headers})
         
         if(!token){
-            alert("Please Login first");
-        }
+            // alert("Please Login First")
+            toast.success("Please Login First", {
+                position: toast.POSITION.TOP_RIGHT
+              });
+            }
         else{
-            alert("Recipe Saved Successfully!!!")
+            // alert("Recipe Saved Successfully!!!")
+           toast.success("Recipe Saved Successfully!!!", {
+                position: toast.POSITION.TOP_RIGHT
+              });
         }
-        console.log("savedItems");
+        // console.log("savedItems");
+
+        // console.log(element,"ele");
     }
     return (
         <>
@@ -69,8 +71,8 @@ const CategoriesDescription = ({ saveRecipe }) => {
                             <hr/>
                             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
                             <div id='recipe-categories-description-page-container-icons'>
-                                <div onClick={() => {
-                                     savedFavRecipe()
+                                <div onClick={() => {     
+                                     savedFavRecipe(element)
                                     saveRecipe(element)
                                 }}><BsBookmark fontSize="1.5rem"/></div>
                                 <div><TfiDownload fontSize="1.5rem"/></div>

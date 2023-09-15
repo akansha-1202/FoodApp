@@ -25,15 +25,18 @@ const AddRecipe = () => {
 
     const navigate = useNavigate()
 
+    const user_id = localStorage.getItem("user_id");
+    const token = localStorage.getItem("token");;
 
+    const headers = {
+        authorization: `Bearer ${token}`,
+      };
     const handleSubmit = async () => {
         try {
+            // await axios.post('http://localhost:8080/api/addRecipe',{
             await axios.post('https://food-q03d.onrender.com/api/addRecipe', {
-                recipeTitle, recipeDescription, recipeCategory, recipePrepTime, recipeCookTime, recipeServes, recipeIngredients, recipeDirections, recipeSaveRecipeAs,
-                // headers: {
-                //     'Authorization': "Bearer " + token
-                // }
-            })
+                user_id, recipeTitle, recipeDescription, recipeCategory, recipePrepTime, recipeCookTime, recipeServes, recipeIngredients, recipeDirections, recipeSaveRecipeAs,
+            },{headers})
                 .then(res => {
                     if (res.data.message === "Your Recipe Added Successfully") {
                         alert("Your Recipe Added Successfully!!!")

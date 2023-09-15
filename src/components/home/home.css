@@ -78,6 +78,7 @@
 }
 #home-comment{
   width: 35%;
+  /* height: 60vh; */
   border:2px solid #F2F2F2;
   border-radius: 2px;
   padding: 1%;
@@ -109,7 +110,8 @@
   font-weight: 300;
 }
 #comment-content img{
-   width: 100%;
+   width: 80%;
+   /* height: 30vh; */
 }
 #comment-footer{
   display: flex;
