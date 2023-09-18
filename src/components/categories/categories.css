@@ -288,6 +288,11 @@ display: none;
     width: 92%;
 }
 
+#recipe-categories-description-page-container img{
+    width: 100%;
+    height: 40vh;
+ }
+ 
 #right-side-container{
     display: none;
     

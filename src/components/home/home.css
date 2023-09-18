@@ -539,7 +539,7 @@ border-radius: 4px;
   
   .home1 > div{
     text-transform:uppercase;
-    margin-top: -2rem;
+    margin-top: -2.3rem;
     color: white;
     font-weight: 700;
     /* margin-left: 0.2rem; */
@@ -547,7 +547,7 @@ border-radius: 4px;
   }
   .text-home1{
     position: absolute;
-    width: 84%;
+    width: 84.8%;
     height: 5vh;
     background: linear-gradient(to top,#000000 0%,rgba(0,0,0,0) 100%);
     border-bottom-right-radius: 4px;
