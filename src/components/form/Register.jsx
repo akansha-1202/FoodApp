@@ -42,19 +42,6 @@ export default function Register({toggleLoginSignup, togglePopup}) {
     }
   };
 
-  // const signupUser =(e)=>{
-  //   e.preventDefault();
-  //   console.log("hello");
-  //   axios.post('http://localhost:8080/api/register', {email, password}) // Replace with the actual API endpoint
-  //   .then((response) => {
-  //     // Handle the response data if needed
-  //     console.log('Data sent successfully:', response);
-  //   })
-  //   .catch((error) => {
-  //     // Handle errors here
-  //     console.error('Error sending data:', error);
-  //   });
-  // }
 
   return (
     <>

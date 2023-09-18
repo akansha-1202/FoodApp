@@ -73,7 +73,7 @@ const Categories = () => {
 
            <div  className='category-fixed-advertisement'>
             <div id='category-advertisement'>
-              <img src='https://img.hellofresh.com/w_3840,q_auto,f_auto,c_limit,fl_lossy/hellofresh_website/au/cms/howitworks/Global_Website_HowItWorks_EN.gif' alt='' id='cat-gif-img'/>
+              <img src='https://images.pexels.com/photos/2679501/pexels-photo-2679501.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' alt='' id='cat-gif-img'/>
             </div>
         </div>
         </div>

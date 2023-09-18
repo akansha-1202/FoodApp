@@ -115,7 +115,7 @@ const CategoriesDescription = ({ saveRecipe }) => {
 
                  <div  className='fixed-advertisement'>
                     <div id='advertisement'>
-                    <img src='https://images.food52.com/7bOTbDlMQrmll6_52p0Q7082O-o=/a26a2296-bbb5-4c23-a1c9-9bc66b057e7c--wrap-sandwich.gif' alt='' id='gif-img'/>
+                    <img src='https://images.lifestyleasia.com/wp-content/uploads/sites/3/2021/10/08125938/sam-moqadam-yxZSAjyToP4-unsplash-scaled.jpg' alt='' id='gif-img'/>
                     </div>
                  </div>
             </div>
