@@ -138,14 +138,13 @@
   height: 80%;
 }
 
-.home1 > div{
+/* .home1 > div{
   text-transform:uppercase;
   margin-top: -5rem;
   color: white;
   font-weight: 700;
-  /* margin-left: 0.2rem; */
   color: #fff;
-}
+} */
 /* .text-home1{
   position: absolute;
   width: 30%;
