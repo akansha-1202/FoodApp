@@ -43,7 +43,7 @@ export default function Home() {
 
         <div className="review-box">
         {item.content.map((item, index) => (
-          <div id="home-comment">
+          <div id="home-comment" key={index}>
              <div id="comment-header">
               <img src={item.icon} alt="comment"/>
               <p>{item.user} <span>{item.mid}</span> {item.recipe}</p>
@@ -58,7 +58,7 @@ export default function Home() {
 
           
           {item.contentImage.map((item, index) => (
-          <div id="home-comment">
+          <div id="home-comment" key={index}>
                 <div id="comment-header">
                   <img src={item.icon} alt="comment"/>
                   <p>{item.user} <span>{item.mid}</span> {item.recipe}</p>
@@ -82,8 +82,8 @@ export default function Home() {
           </div>
           <div className="review-box">
             {item.content.map((item, index) => (
-              <Link to={`/recipes/${item.subHeading}`}>
-                <div className="home1" key={index}>
+              <Link to={`/recipes/${item.subHeading}`}  key={index}>
+                <div className="home1">
                   <img src={item.images} alt="images" />
                   <div className="text-home1">
                     <div id="collection">COLLECTION</div>
